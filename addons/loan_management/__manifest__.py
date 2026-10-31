@@ -7,8 +7,9 @@
     'depends': ['base',
                 ],
     'data': [
-        'views/menu.xml',
+        'security/ir.model.access.csv',
         'views/proposals.xml',
+        'views/menu.xml',
     ],
     'application': True,
 }

@@ -1,3 +1,5 @@
 <odoo>
     <menuitem id="menu_loan_management" name="Loan Management" sequence="10"/>
+    <menuitem id="proposals_menu" name="Proposals" parent="menu_loan_management"
+              action="action_loan_proposals" sequence="10"/>
 </odoo>
