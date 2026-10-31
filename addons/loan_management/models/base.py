@@ -1,4 +1,4 @@
-from odoo import models
+from odoo import fields, models
 
 
 class Base(models.AbstractModel):
@@ -8,6 +8,6 @@ class Base(models.AbstractModel):
 
     # receiver
     # receptor   
-    name = models.CharField(string='Proposal Name', required=True)
-    amount = models.Float(string='Amount', required=True)
-    term = models.Integer(string='Term (months)', required=True)
+    name = fields.Char(string='Proposal Name', required=True)
+    amount = fields.Float(string='Amount', required=True)
+    term = fields.Integer(string='Term (months)', required=True)

@@ -1,4 +1,10 @@
 <odoo>
-    <menuitem id="proposals_sent_menu" name="Sent Proposals" parent="menu_proposals" sequence="10"/>
-    <menuitem id="proposals_received_menu" name="Received Proposals" parent="menu_proposals" sequence="20"/>
+    <record id="action_loan_management_home" model="ir.actions.client">
+        <field name="name">Loan Management</field>
+        <field name="tag">display_notification</field>
+        <field name="params" eval="{'type': 'success', 'title': 'Loan Management', 'message': 'The Proposals menu is working.', 'sticky': False}"/>
+    </record>
+
+    <menuitem id="proposals_menu" name="Proposals" parent="menu_loan_management"
+              action="action_loan_management_home" sequence="10"/>
 </odoo> 

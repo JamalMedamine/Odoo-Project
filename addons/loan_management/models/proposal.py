@@ -1,4 +1,4 @@
-from odoo import models
+from odoo import fields, models
 from . import base
 
 class Proposal(base.Base):
@@ -6,8 +6,9 @@ class Proposal(base.Base):
     _description = 'Loan Proposal'
     
     
-    interest_rate = models.Float(string='Interest Rate', required=True)
-    status = models.Selection([
+    interest_rate = fields.Float(string='Interest Rate', required=True)
+    status = fields.Selection([
+        ('draft', 'Draft'),
         ('submitted', 'Submitted'),
         ('approved', 'Approved'),
         ('rejected', 'Rejected'),

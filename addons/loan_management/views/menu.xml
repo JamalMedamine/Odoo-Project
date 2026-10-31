@@ -1,4 +1,3 @@
 <odoo>
     <menuitem id="menu_loan_management" name="Loan Management" sequence="10"/>
-    <menuitem id="menu_proposals" name="Proposals" parent="menu_loan_management" sequence="10"/>
 </odoo>
