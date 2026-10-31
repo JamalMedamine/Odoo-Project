@@ -6,6 +6,7 @@
     'depends': ['base',
                 ],
     'data': [
+        'views/menu.xml',
     ],
     'application': True,
 }

@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="proposals_sent_menu" name="Sent Proposals" parent="menu_proposals" sequence="10"/>
+    <menuitem id="proposals_received_menu" name="Received Proposals" parent="menu_proposals" sequence="20"/>
+</odoo> 
